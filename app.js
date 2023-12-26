@@ -15,5 +15,11 @@ function PokemonList() {
     { name: '꼬부기', type: '물' },
   ];
 
-  
-}
+  return (
+    <div>
+      {pokemons.map((pokemon, index) => (
+        <Pokemon key={index} name={pokemon.name} type={pokemon.type} /> 
+      ))}
+    </div>
+  );
+};
